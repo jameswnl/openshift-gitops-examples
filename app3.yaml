@@ -5,13 +5,13 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: bgdk
+    namespace: wisdom-dev
     server: https://kubernetes.default.svc
   project: default
   source:
     path: apps/bgd/overlays/bgdk
     repoURL: https://github.com/jameswnl/openshift-gitops-examples
-    targetRevision: minikube 
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
