@@ -6,7 +6,6 @@ metadata:
     app: bgd
   name: bgd
 spec:
-  nodeName: ip-10-0-141-60.ec2.internal
   replicas: 1
   selector:
     matchLabels:
@@ -18,6 +17,7 @@ spec:
       labels:
         app: bgd
     spec:
+      nodeName: ip-10-0-141-60.ec2.internal
       containers:
       - image: quay.io/jameswong/hello-world
         name: bgd
