@@ -30,6 +30,7 @@ spec:
       containers:
       - image: quay.io/jameswong/hello-world:2.1.1
         name: bgd
+        command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
         env:
         - name: COLOR
           value: "blue"
