@@ -28,7 +28,7 @@ spec:
                 - m5.2xlarge
 
       containers:
-      - image: quay.io/jameswong/hello-world
+      - image: quay.io/jameswong/hello-world:2.1.1
         name: bgd
         env:
         - name: COLOR
