@@ -4,9 +4,9 @@ metadata:
   name: bgdk-app
   namespace: openshift-gitops
   annotations:
-    argocd-image-updater.argoproj.io/image-list: hello=quay.io/jameswong/hello-world:~2.1.0,modelsvr=quay.io/jameswong/wisdom-model-server
-    argocd-image-updater.argoproj.io/modelsvr.pull-secret: pullsecret:openshift-gitops/quay-pull-secret-james
-    argocd-image-updater.argoproj.io/write-back-method: argocd
+    # argocd-image-updater.argoproj.io/image-list: hello=quay.io/jameswong/hello-world:~2.1.0,modelsvr=quay.io/jameswong/wisdom-model-server
+    # argocd-image-updater.argoproj.io/modelsvr.pull-secret: pullsecret:openshift-gitops/quay-pull-secret-james
+    # argocd-image-updater.argoproj.io/write-back-method: argocd
     # argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd-image-updater/git-creds
 spec:
   destination:
