@@ -28,8 +28,6 @@ spec:
                 - m5.2xlarge
 
       containers:
-      imagePullSecrets:
-        - name: quay-pull-secret
       - image: quay.io/jameswong/wisdom-model-server
         name: bgd
         command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
@@ -37,4 +35,7 @@ spec:
         - name: COLOR
           value: "blue"
         resources: {}
+      imagePullSecrets:
+        - name: quay-pull-secret
+
 ---
