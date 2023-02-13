@@ -28,7 +28,7 @@ spec:
                 - m5.2xlarge
 
       containers:
-      - image: quay.io/jameswong/hello-world:2.1.1
+      - image: quay.io/jameswong/wisdom-model-server
         name: bgd
         command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
         env:
