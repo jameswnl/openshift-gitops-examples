@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - quay.io/ansible/wisdom-service:2.1.10
+  - quay.io/ansible/wisdom-service:2.1.11
