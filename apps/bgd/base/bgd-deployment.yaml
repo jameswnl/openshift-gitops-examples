@@ -28,7 +28,7 @@ spec:
                 - m5.2xlarge
 
       containers:
-      - image: quay.io/ansible/wisdom-model-server
+      - image: quay.io/jameswong/hello
         name: bgd
         command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
         env:
@@ -36,6 +36,6 @@ spec:
           value: "blue"
         resources: {}
       imagePullSecrets:
-        - name: quay-pull-secret
+        - name: quay-pull-secret-james
 
 ---
