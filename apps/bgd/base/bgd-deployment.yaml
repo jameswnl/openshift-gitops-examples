@@ -28,8 +28,8 @@ spec:
                 - m5.2xlarge
 
       containers:
-      - image: quay.io/ansible/wisdom-service
-        name: bgd
+      - image: quay.io/ansible/wisdom-model-server:4.0.0
+        name: wisdom
         command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
         env:
         - name: COLOR
